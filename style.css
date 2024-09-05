@@ -1,0 +1,1178 @@
+body {
+  position: relative;
+  background-image:url("images/background.PNG");
+  background-size: 100vw;
+  background-position: center center;
+  background-repeat:repeat-y;
+  text-align:center;
+  margin:auto;
+  padding:0;
+  padding-top: 60px;
+}
+
+.fredoka-nav {
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-size: 4vh;
+  font-weight: 450;
+  font-style:normal;
+  color: rgb(107, 71, 71);
+}
+.navbar-collapse{
+  transform: translatex(1vw);
+}
+
+button.navbar-toggler:hover{
+  background-color: #F3BABA;
+}
+
+.navbar {
+  overflow: hidden;
+  background-color: rgb(237, 114, 103);
+  font-family: "Fredoka", sans-serif;
+  box-shadow: 0px 10px 10px 10px rgb(237, 114, 103);
+}
+.navbar a {
+  opacity: 50%;
+  color: white;
+  text-shadow: #683e3e -2px 4px;
+  opacity: 100%;
+  font-family: "Fredoka", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style:normal;
+  font-size: 4vh;
+  text-align: center;
+  padding: 14px 16px;
+}
+.navbar a:hover, .drop-button {
+  text-shadow: none;
+  background-color: #F3BABA;
+  text-decoration: underline;
+}
+
+.name-logo {
+  display: flex;
+  align-items: center;
+  margin-right: 0px;
+  max-width: 300px; 
+  max-height: 50px; 
+}
+
+.collapse.navbar-collapse {
+  padding: 0;
+  margin: 0;
+  flex-shrink: 0; 
+}
+.navbar-nav {
+  text-align: center;
+}
+.navbar {
+  transition: transform 0.3s ease-in-out;
+}
+.navbar.hidden {
+  transform: translateY(-175%);
+}
+.navbar.unhiding {
+  transform: translateY(0);
+  transition: transform 0.3s ease-out;
+}
+
+.section-divide{
+  padding-bottom: 90px;
+}
+.pad-section{
+  padding-top: 40px;;
+  padding-bottom: 40px;
+}
+
+.main{
+  width: 100%;
+  margin: auto;
+}
+
+.fuji-container{
+  display:block;
+  justify-content: center;
+  width: 100vw;
+  margin: auto;
+  height: min-content;
+}
+.fuji{
+  width: 700px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+.fuji:hover{
+  transform: translateY(-7px);
+}
+
+.title-container{
+  display:block;
+  justify-content: center;
+  width: 100vw;
+  height: 100px;
+  margin: auto;
+  height: min-content;
+}
+.about-title, .experience-title, .skills-title, .project-title{
+  display:block;
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  margin: auto;
+  height: min-content;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+}
+
+.sub-heading{
+  width: auto;
+  height: 80px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+  display: block;
+}
+.heading{
+  width: 650px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+.contact{
+  display:block;
+  justify-content: center;
+  text-align: center;
+  width: 100%;
+  font-size: 5vh;
+  height: 100px;
+  padding-top: 4vh;
+  padding-bottom: 4vh;
+  margin: auto;
+  height: min-content;
+}
+.contact-icons{
+  text-align: center;
+  margin-left: 40px;
+  margin-right: 40px;
+  font-size: 5vh;
+  color:rgb(107, 71, 71);
+}
+.footer-icons{
+  display: flex;
+    text-align: right;
+    font-size: 5vh;
+    color:white;
+    padding: 2%;
+}
+.footer-icons:hover{
+  transform: translateY(-7px);
+}
+.footer-left{
+  justify-content: right;
+}
+.contact-icons:hover{
+  transform: translateY(-7px);
+}
+
+.title-text, .section-home, .section-about, .section-skills {
+  display:block;
+  justify-content: center;
+  text-align: center;
+  width: 60%;
+  height: 100px;
+  margin: auto;
+  height: min-content;
+}
+.section-footer {
+  justify-content: bottom;
+  display:block;
+  text-align: center;
+  height: 100px;
+  margin: auto;
+  height: min-content;
+  width: 100%;
+  background-color: rgb(237, 114, 103);
+  margin: 0;
+  padding: 0;
+}
+.section-footer p a{
+  color: white;
+  margin: 0;
+  text-align: left;
+  padding: 2%;
+  text-shadow: #885858 -2px 4px;
+  text-decoration: none;
+}
+.section-projects{
+  display:block;
+  justify-content: center;
+  text-align: center;
+  width: 60%;
+  height: 100px;
+  margin: auto;
+  height: min-content;
+}
+
+.section-experience{
+  display:block;
+  justify-content: center;
+  text-align: left;
+  width: 60%;
+  height: 100px;
+  margin: auto;
+  height: min-content;
+}
+.experience-container{
+  padding-bottom: 20px;
+  margin: auto;
+}
+.job-name{
+  font-weight:550;
+  font-size: 3.5vh;
+  margin: none;
+  width: max-content;
+}
+.date{
+  font-style: italic;
+  font-size: 2.75vh;
+  width: max-content;
+}
+.project-date{
+  font-style: italic;
+  font-size: 2vh;
+  margin: auto;
+  width: max-content;
+  padding-bottom: 15px;
+}
+.location-name, .job-title{
+  font-size: 2.75vh;
+  font-style: italic;
+}
+.one-line{
+  display: flex; 
+  justify-content: space-between;
+}
+ul {
+  font-size:3vh;
+  padding: 0;
+  text-align: left;
+  list-style-position: inside;
+  list-style-type:circle;
+  transform: translateX(-1vw);
+}
+.experience-header{
+  align-items: center;
+}
+
+.skills-grid, .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(200px, 1fr)); 
+  grid-gap: 2vh;
+  justify-items: center;
+  align-items: start;
+  max-width: 100%;
+  margin: 0 auto;
+  padding-top: 10px;
+}
+
+.skill-section{
+  display: flex;
+  flex-direction: column;
+}
+
+.project-section {
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 30px;
+  border-color: #9f8787;
+  background-color: #fffaef;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  width: auto;
+  height: auto;
+}
+.project-section a{
+  text-decoration: none;
+  color:#683e3e;
+}
+.grid-child {
+  width: 100%;
+  padding: 0;
+
+}
+.grid-child img{
+  justify-content: center;
+  text-align: center;
+  width:175px;
+  height: auto;
+  margin: auto;
+}
+.skills-sub, .projects-sub{
+  font-size: 3vh;
+  text-align: center;
+  margin: 0;
+  text-decoration: underline;
+}
+.card-text{
+  font-size: 3vh;
+  padding: 10px;
+}
+.card-image{
+  width: auto;
+  height: 80px;
+  margin-left:auto;
+  margin-right: auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+
+@media screen and (max-width: 3840px){
+  .fuji{
+    width: 1000px;
+  }
+  .project-section {
+  border-width: 3px;
+  border-style: solid;
+  border-radius: 30px;
+  border-color: #9f8787;
+  background-color: #fffaef;
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  margin: 10px;
+  height: auto;
+}
+.title-container{
+  display:block;
+  justify-content: center;
+  width: 100vw;
+  height: 100px;
+  margin: auto;
+  height: min-content;
+}
+.about-title, .experience-title, .skills-title, .project-title{
+  display:block;
+  justify-content: center;
+  width: 300px;
+  height: 100px;
+  margin: auto;
+  height: min-content;
+  padding-top: 6vh;
+  padding-bottom: 6vh;
+}
+
+.sub-heading{
+  width: auto;
+  height: 150px;
+  padding-bottom: 15px;
+  margin: 0 auto;
+  display: block;
+}
+.heading{
+  width: 950px;
+  height: auto;
+  margin: 0 auto;
+  display: block;
+}
+
+}
+@media screen and (max-width: 1769px){
+  .project-section {
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: #9f8787;
+    background-color: #fffaef;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    height: auto;
+  }
+  .card-text{
+    font-size: 2.75vh;
+    padding: 10px;
+  }
+}
+@media screen and (max-width: 1480px) {
+  .card-text{
+    font-size: 2.75vh;
+    padding: 10px;
+  }
+  .project-section {
+    padding: 10px;
+    margin: 10px;
+    width: auto;
+    height: auto;
+  }
+}
+@media screen and (max-width: 1440px){
+  body {
+    position: relative;
+    background-image:url("images/background.PNG");
+    background-size: 100vw;
+    background-position: center center;
+    background-repeat:repeat-y;
+    text-align:center;
+    margin:auto;
+    padding:0;
+    padding-top: 60px;
+  }
+  
+  .fredoka-nav {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 4vh;
+    font-weight: 450;
+    font-style:normal;
+    color: rgb(107, 71, 71);
+  }
+  .navbar-collapse{
+    transform: translatex(1vw);
+  }
+  
+  button.navbar-toggler:hover{
+    background-color: #F3BABA;
+  }
+  
+  .navbar {
+    overflow: hidden;
+    background-color: rgb(237, 114, 103);
+    font-family: "Fredoka", sans-serif;
+    box-shadow: 0px 10px 10px 10px rgb(237, 114, 103);
+  }
+  .navbar a {
+    opacity: 50%;
+    color: white;
+    text-shadow: #683e3e -2px 4px;
+    opacity: 100%;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style:normal;
+    font-size: 4vh;
+    text-align: center;
+    padding: 14px 16px;
+  }
+  .navbar a:hover, .drop-button {
+    text-shadow: none;
+    background-color: #F3BABA;
+    text-decoration: underline;
+  }
+  
+  .name-logo {
+    display: flex;
+    align-items: center;
+    margin-right: 0px;
+    max-width: 300px; 
+    max-height: 50px; 
+  }
+  
+  .collapse.navbar-collapse {
+    padding: 0;
+    margin: 0;
+    flex-shrink: 0; 
+  }
+  .navbar-nav {
+    text-align: center;
+  }
+  .navbar {
+    transition: transform 0.3s ease-in-out;
+  }
+  .navbar.hidden {
+    transform: translateY(-175%);
+  }
+  .navbar.unhiding {
+    transform: translateY(0);
+    transition: transform 0.3s ease-out;
+  }
+  
+  .section-divide{
+    padding-bottom: 90px;
+  }
+  .pad-section{
+    padding-top: 40px;;
+    padding-bottom: 40px;
+  }
+  
+  .main{
+    width: 100%;
+    margin: auto;
+  }
+  
+  .fuji-container{
+    display:block;
+    justify-content: center;
+    width: 100vw;
+    margin: auto;
+    height: min-content;
+  }
+  .fuji{
+    width: 700px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  .fuji:hover{
+    transform: translateY(-7px);
+  }
+  
+  .title-container{
+    display:block;
+    justify-content: center;
+    width: 100vw;
+    height: 100px;
+    margin: auto;
+    height: min-content;
+  }
+  .about-title, .experience-title, .skills-title, .project-title{
+    display:block;
+    justify-content: center;
+    width: 300px;
+    height: 100px;
+    margin: auto;
+    height: min-content;
+    padding-top: 6vh;
+    padding-bottom: 6vh;
+  }
+  
+  .sub-heading{
+    width: auto;
+    height: 80px;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    display: block;
+  }
+  .heading{
+    width: 650px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  
+  .contact{
+    display:block;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    font-size: 5vh;
+    height: 100px;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+    margin: auto;
+    height: min-content;
+  }
+  .contact-icons{
+    text-align: center;
+    margin-left: 40px;
+    margin-right: 40px;
+    font-size: 5vh;
+    color:rgb(107, 71, 71);
+  }
+  .footer-icons{
+    display: flex;
+      text-align: right;
+      font-size: 5vh;
+      color:white;
+      padding: 2%;
+  }
+  .footer-icons:hover{
+    transform: translateY(-7px);
+  }
+  .footer-left{
+    justify-content: right;
+  }
+  .contact-icons:hover{
+    transform: translateY(-7px);
+  }
+  
+  .title-text, .section-home, .section-about, .section-skills {
+    display:block;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    height: 100px;
+    margin: auto;
+    height: min-content;
+  }
+  .section-footer {
+    justify-content: bottom;
+    display:block;
+    text-align: center;
+    height: 100px;
+    margin: auto;
+    height: min-content;
+    width: 100%;
+    background-color: rgb(237, 114, 103);
+    margin: 0;
+    padding: 0;
+  }
+  .section-footer p a{
+    color: white;
+    margin: 0;
+    text-align: left;
+    padding: 2%;
+    text-shadow: #885858 -2px 4px;
+    text-decoration: none;
+  }
+  .section-projects{
+    display:block;
+    justify-content: center;
+    text-align: center;
+    width: 60%;
+    height: 100px;
+    margin: auto;
+    height: min-content;
+  }
+  
+  .section-experience{
+    display:block;
+    justify-content: center;
+    text-align: left;
+    width: 60%;
+    height: 100px;
+    margin: auto;
+    height: min-content;
+  }
+  .experience-container{
+    padding-bottom: 20px;
+    margin: auto;
+  }
+  .job-name{
+    font-weight:550;
+    font-size: 3.5vh;
+    margin: none;
+    width: max-content;
+  }
+  .date{
+    font-style: italic;
+    font-size: 2.75vh;
+    width: max-content;
+  }
+  .project-date{
+    font-style: italic;
+    font-size: 2vh;
+    margin: auto;
+    width: max-content;
+    padding-bottom: 15px;
+  }
+  .location-name, .job-title{
+    font-size: 2.75vh;
+    font-style: italic;
+  }
+  .one-line{
+    display: flex; 
+    justify-content: space-between;
+  }
+  ul {
+    font-size:3vh;
+    padding: 0;
+    text-align: left;
+    list-style-position: inside;
+    list-style-type:circle;
+    transform: translateX(-1vw);
+  }
+  .experience-header{
+    align-items: center;
+  }
+  
+  .skills-grid, .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(200px, 1fr)); 
+    grid-gap: 2vh;
+    justify-items: center;
+    align-items: start;
+    max-width: 100%;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+  
+  .skill-section{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .project-section {
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: #9f8787;
+    background-color: #fffaef;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    width: auto;
+    height: auto;
+  }
+  .project-section a{
+    text-decoration: none;
+    color:#683e3e;
+  }
+  .grid-child {
+    width: 100%;
+    padding: 0;
+  
+  }
+  .grid-child img{
+    justify-content: center;
+    text-align: center;
+    width:175px;
+    height: auto;
+    margin: auto;
+  }
+  .skills-sub, .projects-sub{
+    font-size: 3vh;
+    text-align: center;
+    margin: 0;
+    text-decoration: underline;
+  }
+  .card-text{
+    font-size: 3vh;
+    padding: 10px;
+  }
+  .card-image{
+    width: auto;
+    height: 80px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  }  
+@media screen and (max-width: 1280px) {
+  .skills-grid, .projects-grid  {
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-gap: 2vh;
+    display: grid;
+    flex-direction: column;
+    align-items: top;
+  }
+  
+  .project-section {
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 30px;
+    color: #683e3e;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: auto;
+    width: auto;
+    height: auto;
+  }
+  .grid-child img{
+    justify-content: center;
+    text-align: center;
+    width: 180px;
+    height: auto;
+  }
+  .skills-sub, .projects-sub{
+    text-align: center;
+  }
+  .card-text{
+    font-size: 2.75vh;
+  }
+  
+}
+@media screen and (max-width: 1024px) {
+
+  .sub-heading{
+    width: auto;
+    height: 70px;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    display: block;
+  }
+  .heading{
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .experience-container{
+    padding-bottom: 15px;
+  }
+  .job-name{
+    font-weight:500;
+    font-size: 2.5vh;
+    margin: none;
+    width: 100%;
+    
+  }
+  .location-name, .job-title{
+    font-size: 0.75vh;
+    font-style: italic;
+    width: max-content;
+  }
+  .date{
+    font-style: italic;
+    font-size: 2vh;
+    width: max-content;
+  }
+  .location-name, .job-title{
+    font-size: 2vh;
+    font-style: italic;
+  }
+  .skills-grid, .projects-grid  {
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+    display: grid;
+    flex-direction: column;
+    align-items: top;
+  }
+  .project-section {
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: #9f8787;
+    background-color: #fffaef;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    width: auto;
+    height: auto;
+  }
+
+
+}
+@media (max-width: 979px) {
+  body {
+    padding-top: 0px;
+  }
+}
+@media screen and (max-width:767px) {
+  .fredoka-nav {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 3.5vh;
+    font-weight: 450;
+    font-style:normal;
+  }
+  ul {
+    font-size:3vh;
+    padding: 0;
+    text-align: left;
+    list-style-position: inside;
+    list-style-type:circle;
+    transform: translateX(-3vw);
+  }
+  .navbar-collapse{
+    transform: translatex(5vw);
+  }
+  .name-logo {
+    display: flex;
+    align-items: center;
+  }
+  .name-logo img {
+    max-width: 300px; 
+    max-height: 50px; 
+    margin-right: 10px; 
+  }
+  .navbar a {
+    opacity: 50%;
+    color: white;
+    text-shadow: #683e3e -2px 4px;
+    opacity: 100%;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style:normal;
+    font-size: 4vh;
+    padding: 14px 16px;
+  }
+  .navbar-toggler {
+    padding: 0;
+    margin: 0; 
+    border: none; 
+  }
+  .navbar-toggler-icon {
+    width: 24px; 
+    height: 24px; 
+  }
+  .pad-section{
+    padding-top: 30px;;
+    padding-bottom: 30px;
+  }
+  .fuji{
+    width: 275px;
+    height: auto;
+    margin: auto;
+    display: block;
+    padding-bottom: 10px;
+  }
+  .contact{
+    display:block;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    font-size: 4vh;
+    height: 100px;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    margin: auto;
+    height: max-content;
+  }
+  .contact-icons{
+    margin: 12px;
+    font-size: 6vh;
+  }
+  .heading{
+    width: 325px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+
+
+  .experience-container{
+    padding-bottom: 15px;
+  }
+  .job-name{
+    font-weight:500;
+    font-size: 3.75vh;
+    margin: none;
+    width: 100%;
+    
+  }
+  .location-name, .job-title, .date{
+    font-size: 3vh;
+    font-style: italic;
+  }
+  .one-line {
+    display: block;
+  }
+  .one-line p {
+    margin-bottom: 10px;
+  }
+  .skills-sub{
+    text-align: left;
+    font-size: 3.5vh;
+    text-decoration: underline;
+  }
+  .project-section {
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: #9f8787;
+    background-color: #fffaef;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    margin: 10px;
+    width: auto;
+    height: auto;
+  }
+  .project-section a{
+    text-decoration: none;
+    color:#683e3e;
+  }
+  .grid-child {
+    width: 100%;
+  }
+  .grid-child img{
+    justify-content: center;
+    text-align: center;
+    width:175px;
+    height: auto;
+    margin: auto;
+  }
+  .skills-sub, .projects-sub{
+    font-size: 3vh;
+    text-align: center;
+  }
+  .card-text{
+    font-size: 2.5vh;
+  }
+  .card-image{
+    width: auto;
+    height: 80px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+  
+}
+@media screen and (max-width:480px) {
+  .fredoka-nav {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 2.75vh;
+    font-weight: 450;
+    font-style:normal;
+  }
+  ul {
+    font-size:2.25vh;
+    padding: 0;
+    text-align: left;
+    list-style-position: inside;
+    list-style-type:circle;
+    transform: translateX(-5vw);
+  }
+  .navbar-collapse{
+    transform: translatex(5vw);
+  }
+  .name-logo {
+    display: flex;
+    align-items: center;
+  }
+  .name-logo img {
+    max-width: 300px; 
+    max-height: 50px; 
+    margin-right: 10px; 
+  }
+  .navbar a {
+    opacity: 50%;
+    color: white;
+    text-shadow: #683e3e -2px 4px;
+    opacity: 100%;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style:normal;
+    font-size: 2.75vh;
+    padding: 14px 16px;
+  }
+  .navbar-toggler {
+    padding: 0;
+    margin: 0; 
+    border: none; 
+  }
+  .navbar-toggler-icon {
+    width: 24px; 
+    height: 24px; 
+  }
+  .pad-section{
+    padding-top: 20px;;
+    padding-bottom: 20px;
+  }
+  .sub-heading{
+    width: auto;
+    height: 90px;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    display: block;
+  }
+  .fuji{
+    width: 250px;
+    height: auto;
+    margin: auto;
+    display: block;
+  }
+  .contact{
+    display:block;
+    justify-content: center;
+    text-align: center;
+    width: 50%;
+    font-size: 3.5vh;
+    height: 100px;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+    margin: auto;
+    height: max-content;
+  }
+  .contact-icons{
+    margin: 12px;
+    font-size: 4vh;
+  }
+  .footer-icons{
+    display: flex;
+      text-align: right;
+      font-size: 4vh;
+      padding: 4%;
+  }
+  .heading{
+    width: 250px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  .sub-heading {
+    width: auto; 
+    height:55px;
+    margin: 0 auto;
+    display: block;
+  }
+
+  .experience-container{
+    padding-bottom: 15px;
+  }
+  .job-name{
+    font-weight:500;
+    font-size: 2.5vh;
+    margin: none;
+    width: 100%;
+    
+  }
+  .location-name, .job-title, .date{
+    font-size: 2vh;
+    font-style: italic;
+    width: max-content;
+  }
+  .one-line {
+    display: block;
+  }
+  .one-line p {
+    margin-bottom: 10px;
+  }
+  .skills-sub{
+    text-align: left;
+    font-size: 2.5vh;
+  }
+  .project-section {
+    border-width: 3px;
+    border-style: solid;
+    border-radius: 30px;
+    border-color: #9f8787;
+    background-color: #fffaef;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    margin: 5px;
+    width: auto;
+    height: auto;
+  }
+  .project-section a{
+    text-decoration: none;
+    color:#683e3e;
+  }
+  .grid-child {
+    width: 100%;
+  }
+  .grid-child img{
+    justify-content: center;
+    text-align: center;
+    width:175px;
+    height: auto;
+    margin: auto;
+  }
+  .skills-sub, .projects-sub{
+    font-size: 3vh;
+    text-align: center;
+  }
+  .card-text{
+    font-size: 2.25vh;
+  }
+  .card-image{
+    width: auto;
+    height: 80px;
+    margin-left:auto;
+    margin-right: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    justify-content: center;
+  }
+}

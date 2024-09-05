@@ -1,0 +1,335 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Thashin Bhuiyan | E-portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    
+    <link rel="stylesheet" 
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+
+    <link href="/bootstrap-5.3.3-dist/css/bootstrap.min.css" media="all" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300..700&display=swap" rel="stylesheet">
+
+  
+  </head>
+
+  <body>
+
+    <nav class="navbar justify-content-center fixed-top">
+      <div class="container-fluid">
+        <div class="name-logo">
+          <img style="width:80%;" src="images/logo.png" alt="Logo">
+        </div>
+        <button style="border:none;color:rgb(249, 233, 195);" class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+          <span style="width:40px; height:40px" class="navbar-toggler-icon"></span>
+        </button>
+        
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#home" target="_self">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#about" target="_self">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#experience" target="_self">Experience</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#skills" target="_self">Skills</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#projects" target="_self">Projects</a>
+
+              
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <script>
+    var navbarCollapse = document.getElementById('collapsibleNavbar');
+
+    var navbarLinks = document.querySelectorAll('.navbar-nav .nav-link');
+
+    navbarLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
+        var bsCollapse = new bootstrap.Collapse(navbarCollapse, {
+          toggle: false
+        });
+        bsCollapse.hide();
+      });
+    });
+
+    const navbar = document.querySelector('.navbar');
+    let lastScrollTop = 0;
+
+    window.addEventListener('scroll', function() {
+      const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+      if (scrollTop > lastScrollTop) {
+        navbar.classList.add('hidden');
+      } else {
+        navbar.classList.remove('hidden');
+      }
+      lastScrollTop = scrollTop;
+    });
+
+    navbar.addEventListener('mouseover', function() {
+      navbar.classList.remove('hidden');
+    });
+
+    navbar.addEventListener('mouseout', function() {
+      if (window.pageYOffset > 0) {
+        navbar.classList.add('hidden');
+      }
+    });
+
+    
+    </script>
+    
+
+    <div id="home" class="section-divide "><p></p></div>
+    <div class="justify-content-center">
+      <div class ="fuji-container;" style="text-align: center;">
+        <img alt="meow" class="fuji" style="text-align: center;" src="images/fuji walk 2.gif">
+      </div>
+
+    <div class ="title-container;" style="text-align: center;">
+        <img class="heading" style="text-align: center;" src="images/title.png">
+      </div>
+
+    <div class="main fredoka-nav">
+        <div class="pad-section"> 
+          <div class="title-text">
+            <p>Welcome to my website, where I combine creativity with technology :)</p>
+          </div>
+        </div>
+
+        <div class="pad-section">
+          <div class="contact">
+            <p>Contact me!</p>
+            <a href="https://www.linkedin.com/in/thashin-bhuiyan/" target="_self"><i class="contact-icons fa-brands fa-linkedin "></i></a>
+            <a href= "mailto:th246407@ucf.edu" target="_self"><i class="contact-icons fa-regular fa-envelope"></i></a>
+            <a href="https://github.com/thashin04" target="_self"><i class="contact-icons fa-brands fa-square-github"></i></a>
+          </div>
+        </div>
+
+        <div id="about" class="pad-section">
+          <div class="section-about fredoka-nav">
+            
+            <div class ="about-title;" style="text-align: center;">
+              <img class="sub-heading" style="text-align: center;" src="images/about me.png">
+            </div>
+
+            <p>I'm in my third year as an Information Technology Undergrad with a minor in Digital Media at the University of Central Florida. 
+              I am currently pursuing my IT certifications, as well as learning more about web design and full stack development. I'm currently a web design intern at <a style="color:rgb(237, 114, 103)" href="https://limbitless-solutions.org/" target="_self">Limbitless Solutions</a> 
+              as well as a web designer for UCF's <a style="color:rgb(237, 114, 103)" href="https://osi.ucf.edu/" target="_self">Office of Student Involvement.</a></p> 
+
+          </div>
+        </div>
+
+        <div id="experience" class="pad-section">
+          <div class="section-experience">
+            <div class ="experience-title;" style="text-align: center;">
+              <img class="sub-heading exp-sub-heading" style="text-align: center;" src="images/experience.png">
+            </div>
+
+            <div class="experience-container">
+              <div class="experience-header">
+                <div class="one-line">
+                  <p class="job-name">Limbitless Solutions Inc. - Assistant Scholar</p> 
+                  <p class="date">Aug. 2024 - Present</p>
+                </div>
+  
+                <div class="one-line">
+                  <p class="job-title">Web Designer</p>
+                  <p class="location-name">Orlando, Fl</p>
+                </div>
+              </div>
+              
+              <ul>
+                <li>Utilize HTML, CSS, and Javascript to create sites with user accessibility in mind.</li>
+              </ul>
+            </div>   
+
+            <div class="experience-container">
+              <div class="experience-header">
+                <div class="one-line">
+                  <p class="job-name">Office of Student Involvement(OSI)</p>
+                  <p class="date">Jul. 2024 - Present</p>
+                </div>
+                  
+                <div class="one-line">
+                  <p class="job-title">Web Designer</p>
+                  <p class="location-name">Orlando, Fl</p>
+                </div>
+              </div>
+
+              <ul>
+                <li>Utilize HTML, CSS, JavaScript, and WordPress to create responsive websites that are visually pleasing and
+                  user-friendly.</li>
+                <li>Adhered to WCAG standards to ensure that web experiences are inclusive and accessible for all users.</li>
+                <li>Enhanced the overall usability and reach of the websites.</li>
+              </ul>
+              
+            </div>
+
+            <div class="experience-container">
+
+              <div class="experience-header">
+                <div class="one-line">
+                  <p class="job-name">Association of Computing Machinery (ACM)</p> 
+                  <p class="date">May 2024 - Present</p>
+                </div>
+
+                <div class="one-line">
+                  <p class="job-title">Creative Director</p>
+                  <p class="location-name">Orlando, Fl</p>
+                </div>
+              </div>
+              
+              
+              <ul>
+                <li>Designed flyers, posters, and graphics to promote ACM activities.</li>
+                <li>Managed and coordinated with the marketing team, using tools like Photoshop and Canva.</li>
+                <li>Collaborated with other members to enhance the club’s visibility, resulting in increased engagement and
+                  participation in ACM events.</li>
+              </ul>
+            </div>
+          
+          </div>
+        </div>
+
+        <div id="skills" class="pad-section">
+          <div class="section-skills">
+            <div class="skills-title;" style="text-align: center;">
+              <img class="sub-heading" style="text-align: center;" src="images/skills.png">
+            </div>
+
+            <div class="skills-grid">
+              <div class="skill-section">
+                <p class="skills-sub">Languages:</p>
+                <ul class="grid-child">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>Javascript</li>
+                  <li>Python</li>
+                  <li>C</li>
+                </ul>
+              </div>
+              <div class="skill-section">
+                <p class="skills-sub">Technologies:</p>
+                <ul class="grid-child">
+                  <li>Visual Studio</li>
+                  <li>Firebase</li>
+                  <li>Wordpress</li>
+                  <li>Figma</li>
+                </ul>
+              </div>
+              <div class="skill-section">
+                <p class="skills-sub">Certifications:</p>
+                <ul class="grid-child">
+                  <li>CompTia IT </br>Fund. Pro</li>
+                  <li>Adobe</li>
+                  <ul>
+                    <li>Photoshop</li>
+                    <li>Indesign</li>
+                    <li>Illustrator</li>
+                  </ul>
+                </ul>
+              </div>
+            </div>
+          </div>
+
+        </div>
+        
+        <div id="projects" class="pad-section">            
+          <div class="section-projects">                  
+            <div class ="projects-title;" style="text-align: center;">
+              <img class="sub-heading" style="text-align: center;" src="images/projects.png">
+            </div>
+
+            <div class="projects-grid">
+              <div class="project-section">
+                <div class="card-image">
+                  <a class="grid-child" href="https://www.youtube.com/"><img class="grid-child" src="images/fuji walk 2.gif">
+                </div>
+                <p class="projects-sub" style="color:rgb(237, 114, 103);">E-porfolio Page</p>
+                <p class="project-date">Aug. 2024 - Sep. 2024</p>
+                <p class="card-text">Developed an E-portfolio site to showcase 
+                  what I am working on as well as who I am as a
+                   person! Using Visual Studio Code, I created the 
+                   site using HTML, CSS to style, and JavaScript for
+                    the navigation bar. </p>
+                  </a>
+                  
+              </div>
+            
+              <div class="project-section">
+                <div class="card-image">
+                  <a class="grid-child" href="https://osi.ucf.edu/"><img style="padding-top: 25px;" class="grid-child" src="images/UILexternal_KGrgb_Office of Student Involvement-72dpi.png"> 
+                </div>
+                
+                <p class="projects-sub" style="color:rgb(237, 114, 103);">OSI Site Changes</p>
+                <p class="project-date">Jul. 2024 - Present</p>
+                
+                <p class="card-text">Update UCF's 
+                  Office of Student Involvement website regularly, as 
+                  well as UCF's student government website 
+                  using Wordpress.</p>
+              </a>
+                
+              </div>
+
+              <div class="project-section">
+                <div class="card-image">
+                  <a class="grid-child" href="https://movie-tribute.web.app/"><img style="border-radius: 10px;" class="grid-child" src="images/flower-step.gif">
+                </div>
+                <p class="projects-sub" style="color:rgb(237, 114, 103);">Movie Tribute Page</p>
+                <p class="project-date">Jun. 2024</p>
+                <p class="card-text">Developed a Tribute page for one of my favorite 
+                  films 'Howls Moving Castle'. Structured site using HTML, and CSS to 
+                  style it, incorporating external resources for better functionality.
+                </p>
+              </a>
+
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="pad-section" style="padding-bottom: 0;"> 
+          <footer class="section-footer">
+            <div>
+              
+              <div>
+                <a href="images/Thashin_Bhuiyan_Resume.pdf" target="_self"><i class="footer-icons fa-solid fa-file"></i></a>
+                <a href="https://www.linkedin.com/in/thashin-bhuiyan/" target="_self"><i class="footer-icons fa-brands fa-linkedin "></i></a>
+                <a href= "mailto:th246407@ucf.edu" target="_self"><i class="footer-icons fa-regular fa-envelope"></i></a>
+                <a href="https://github.com/thashin04" target="_self"><i class="footer-icons fa-brands fa-square-github"></i></a>
+              </div>
+            </div>
+            
+          </footer>
+        </div>
+        
+        
+        
+        
+      </div>
+      
+
+    </div>
+
+  </body>
+</html>
