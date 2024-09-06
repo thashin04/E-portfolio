@@ -99,7 +99,7 @@ button.navbar-toggler:hover{
   height: min-content;
 }
 .fuji{
-  width: 700px;
+  width: 670px;
   height: auto;
   margin: 0 auto;
   display: block;
@@ -381,6 +381,24 @@ ul {
   display: block;
 }
 
+}
+@media screen and (max-width: 1920px){
+  .fuji{
+    width: 670px;
+  }
+  .sub-heading{
+    width: auto;
+    height: 80px;
+    padding-bottom: 15px;
+    margin: 0 auto;
+    display: block;
+  }
+  .heading{
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
 }
 @media screen and (max-width: 1769px){
   .project-section {
