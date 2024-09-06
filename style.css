@@ -30,7 +30,7 @@ button.navbar-toggler:hover{
   overflow: hidden;
   background-color: rgb(237, 114, 103);
   font-family: "Fredoka", sans-serif;
-  box-shadow: 0px 10px 10px 10px rgb(237, 114, 103);
+  box-shadow: 0px 0px 10px 10px rgb(237, 114, 103);
 }
 .navbar a {
   opacity: 50%;
@@ -77,13 +77,15 @@ button.navbar-toggler:hover{
   transform: translateY(0);
   transition: transform 0.3s ease-out;
 }
+.navbar-toggler-icon {
+  font-size: 30px;
+}
 
 .section-divide{
   padding-bottom: 90px;
 }
 .pad-section{
-  padding-top: 40px;;
-  padding-bottom: 40px;
+  padding-top: 70px;;
 }
 
 .main{
@@ -380,6 +382,9 @@ ul {
   margin: 0 auto;
   display: block;
 }
+.pad-section{
+  padding-top: 110px;;
+}
 
 }
 @media screen and (max-width: 1920px){
@@ -514,10 +519,7 @@ ul {
   .section-divide{
     padding-bottom: 90px;
   }
-  .pad-section{
-    padding-top: 40px;;
-    padding-bottom: 40px;
-  }
+
   
   .main{
     width: 100%;
@@ -766,6 +768,12 @@ ul {
   }
   }  
 @media screen and (max-width: 1280px) {
+  .fuji{
+    width: 650px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
   .skills-grid, .projects-grid  {
     margin: 0 auto;
     grid-template-columns: 1fr;
@@ -802,16 +810,23 @@ ul {
   
 }
 @media screen and (max-width: 1024px) {
-
+  .fredoka-nav {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 3.5vh;
+    font-weight: 450;
+    font-style:normal;
+    color: rgb(107, 71, 71);
+  }
   .sub-heading{
     width: auto;
-    height: 70px;
+    height: 65px;
     padding-bottom: 15px;
     margin: 0 auto;
     display: block;
   }
   .heading{
-    width: 600px;
+    width: 500px;
     height: auto;
     margin: 0 auto;
     display: block;
@@ -822,23 +837,23 @@ ul {
   }
   .job-name{
     font-weight:500;
-    font-size: 2.5vh;
+    font-size: 3.5vh;
     margin: none;
     width: 100%;
     
   }
   .location-name, .job-title{
-    font-size: 0.75vh;
+    font-size: 3vh;
     font-style: italic;
     width: max-content;
   }
   .date{
     font-style: italic;
-    font-size: 2vh;
+    font-size: 2.5vh;
     width: max-content;
   }
   .location-name, .job-title{
-    font-size: 2vh;
+    font-size: 2.75vh;
     font-style: italic;
   }
   .skills-grid, .projects-grid  {
@@ -862,12 +877,75 @@ ul {
     width: auto;
     height: auto;
   }
+  .fuji{
+    width: 600px;
+    height: auto;
+    margin: 0 auto;
+    display: block;
+  }
+  .job-name{
+    font-weight:500;
+    font-size: 3.25vh;
+    margin: none;
+    width: 100%;
+  }
+  .location-name, .job-title{
+    font-size: 3vh;
+    font-style: italic;
+    width: max-content;
+  }
+  .date{
+    font-style: italic;
+    font-size: 2.25vh;
+    width: max-content;
+  }
 
 
 }
 @media (max-width: 979px) {
   body {
     padding-top: 0px;
+  }
+  .sub-heading {
+    width: auto; 
+    height:75px;
+    margin: 0 auto;
+    display: block;
+  }
+  .fredoka-nav {
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 3vh;
+    font-weight: 450;
+    font-style:normal;
+    color: rgb(107, 71, 71);
+  }
+  .location-name, .job-title{
+    font-size: 3vh;
+    font-style: italic;
+    width: max-content;
+  }
+  .date{
+    font-style: italic;
+    font-size: 2.5vh;
+    width: max-content;
+  }
+  .location-name, .job-title{
+    font-size: 2.75vh;
+    font-style: italic;
+  }
+  .navbar a {
+    opacity: 50%;
+    color: white;
+    text-shadow: #683e3e -2px 4px;
+    opacity: 100%;
+    font-family: "Fredoka", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 600;
+    font-style:normal;
+    font-size: 3vh;
+    text-align: center;
+    padding: 14px 16px;
   }
 }
 @media screen and (max-width:767px) {
@@ -907,7 +985,7 @@ ul {
     font-optical-sizing: auto;
     font-weight: 600;
     font-style:normal;
-    font-size: 4vh;
+    font-size: 2.75vh;
     padding: 14px 16px;
   }
   .navbar-toggler {
@@ -916,12 +994,10 @@ ul {
     border: none; 
   }
   .navbar-toggler-icon {
-    width: 24px; 
-    height: 24px; 
+    font-size: 25px; 
   }
   .pad-section{
-    padding-top: 30px;;
-    padding-bottom: 30px;
+    padding-top: 50px;;
   }
   .fuji{
     width: 275px;
@@ -1028,7 +1104,7 @@ ul {
   .fredoka-nav {
     font-family: "Fredoka", sans-serif;
     font-optical-sizing: auto;
-    font-size: 2.75vh;
+    font-size: 2.5vh;
     font-weight: 450;
     font-style:normal;
   }
@@ -1039,6 +1115,12 @@ ul {
     list-style-position: inside;
     list-style-type:circle;
     transform: translateX(-5vw);
+  }
+  .navbar {
+    overflow: hidden;
+    background-color: rgb(237, 114, 103);
+    font-family: "Fredoka", sans-serif;
+    box-shadow: 0px 0px 10px 10px rgb(237, 114, 103);
   }
   .navbar-collapse{
     transform: translatex(5vw);
@@ -1070,12 +1152,10 @@ ul {
     border: none; 
   }
   .navbar-toggler-icon {
-    width: 24px; 
-    height: 24px; 
+    font-size: 22px; 
   }
   .pad-section{
-    padding-top: 20px;;
-    padding-bottom: 20px;
+    padding-top: 70px;;
   }
   .sub-heading{
     width: auto;
